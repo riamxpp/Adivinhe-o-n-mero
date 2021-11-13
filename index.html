@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Adivinhe o número</title>
+</head>
+<body>
+  <h1>Adivinhe o número</h1>
+  <div class="intervalo__numeros">
+    <span>Escolha o intervalo dos números</span>
+    <div>
+      <label for="comeca">Começa</label>
+      <input type="tel" name="comeca" id="comeca" min="0">
+    </div>
+    <div>
+      <label for="termina">Termina</label>
+      <input type="tel" name="termina" id="termina" max="10000">
+    </div>
+  </div>
+  <div class="chute__numero"> 
+    <div class="dica">
+      <span>Chute um número</span>
+    </div>
+    <div>
+      <input type="tel" name="numero" id="numero">
+      <button type="submit">Chutar</button>
+      <div class="show__numero">
+        <p>O número está entre <span class="texto__comeca">0</span> e <span class="texto__termina">100</span></p> 
+        <a href="#">resetar</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
